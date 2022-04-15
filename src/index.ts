@@ -19,19 +19,44 @@ let person: number[] = [1,2,3,4,5]
 
 let arr: any[] = [1,'Faizan',true ]
 
-// Tuple
+// Tuple - Tuple can contain two or more values of different data types.
 
 let data: [number,string,boolean] = [29,'Tausif Khan',true]
 // console.log(data[0])
 
 // Tuple Array 
 
-let info: [number,string][]
+let fruits: [number,string][]
 
-info = [
+fruits = [
     [10,'mango'],
     [20,'apple'],
     [30,'grapes']
 ]
 
-console.log(info)
+console.log(fruits)
+
+// Union - a particular variable to be able to hold more than one type
+
+let pId: number | string = 2
+pId='hello'
+console.log(pId)
+
+// Enum - Enums allow a developer to define a set of named constants.
+
+enum Direction1 { // Here top is initialized with 5. All of the following members are auto-incremented from that point on. 
+                  // In other words, Direction.top has the value 5, bottom has 6, left has 7, and right has 8.
+    top=5,
+    bottom,
+    left,
+    right
+}
+console.log(Direction1.right)
+
+enum Direction2 {
+    top="john",
+    bottom="doe",
+    left="lily",
+    right='zayn'
+}
+console.log(Direction2.top)
