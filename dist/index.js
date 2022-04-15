@@ -45,3 +45,8 @@ var Direction2;
     Direction2["right"] = "zayn";
 })(Direction2 || (Direction2 = {}));
 console.log(Direction2.top);
+let info = {
+    id: 1,
+    name: 'Bob'
+};
+// console.log(info.name)

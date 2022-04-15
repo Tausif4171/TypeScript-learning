@@ -60,3 +60,17 @@ enum Direction2 {
     right='zayn'
 }
 console.log(Direction2.top)
+
+// Objects
+
+type user ={
+    id: number,
+    name: string
+}
+
+let info : user = {
+    id:1,
+    name:'Bob'
+}
+
+// console.log(info.name)
