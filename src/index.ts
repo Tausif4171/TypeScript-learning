@@ -123,3 +123,26 @@ const subtraction: CalculatorFunc = (x: number, y: number): number => { return x
 
 console.log(addition(4, 2))
 console.log(subtraction(4, 2))
+
+// Classes and access modifier
+
+class Person {
+    public id: number
+    name: string
+
+    constructor(id: number, name: string) {
+        this.id = id
+        this.name = name
+    }
+    register(){
+        return `${this.name} is now registered`
+    }
+}
+
+const bob = new Person(1, 'Bob kue')
+const john = new Person(2, 'john cena')
+console.log(bob, john)
+console.log('Bob kue id change: ', bob.id = 5);
+console.log(bob, john)
+console.log(bob.register())
+
