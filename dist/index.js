@@ -67,4 +67,7 @@ const user1 = {
     id: 1,
     name: 'Tausif'
 };
-// user1.id=5
+const addition = (x, y) => { return x + y; };
+const subtraction = (x, y) => { return x - y; };
+console.log(addition(4, 2));
+console.log(subtraction(4, 2));

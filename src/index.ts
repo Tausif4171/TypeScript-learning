@@ -100,14 +100,26 @@ function print(message: number | string): void {    // with no return type - voi
 // Interfaces
 
 interface UserInterface {
-    readonly id:number,     // 'readonly' we can read only not edit the value of id variable
+    readonly id: number,     // 'readonly' we can read only not edit the value of id variable
     name: string
-    age?:number     //optional with question mark '?'
+    age?: number     //optional with question mark '?'
 }
 
 const user1: UserInterface = {
     id: 1,
-    name:'Tausif'
+    name: 'Tausif'
 }
 
 // user1.id=5
+
+// Function Interface
+
+interface CalculatorFunc {
+    (x: number, y: number): number
+}
+
+const addition: CalculatorFunc = (x: number, y: number): number => { return x + y }
+const subtraction: CalculatorFunc = (x: number, y: number): number => { return x - y }
+
+console.log(addition(4, 2))
+console.log(subtraction(4, 2))
