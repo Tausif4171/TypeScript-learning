@@ -87,3 +87,13 @@ console.log(bob, john);
 console.log('Bob kue id change: ', bob.id = 5);
 console.log(bob, john);
 console.log(bob.register());
+// Extending Classes (Subclasses)
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(29, 'Tausif Khan', 'Software Developer');
+console.log(emp);
+console.log(emp.register());
