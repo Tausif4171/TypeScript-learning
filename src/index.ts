@@ -44,8 +44,7 @@ console.log(pId)
 
 // Enum - Enums allow a developer to define a set of named constants.
 
-enum Direction1 { // Here top is initialized with 5. All of the following members are auto-incremented from that point on. 
-    // In other words, Direction.top has the value 5, bottom has 6, left has 7, and right has 8.
+enum Direction1 {
     top = 5,
     bottom,
     left,
@@ -74,3 +73,12 @@ let info: user = {
 }
 
 // console.log(info.name)
+
+// Type Assertion - It looks like type casting
+
+let cid: any = 12;
+// cid='string';
+// let customerId = <number>cid;       
+let customerId = cid as number;      // we can also write like this
+// customerId = 'abc'
+console.log(typeof (customerId))

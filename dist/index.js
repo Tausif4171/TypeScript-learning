@@ -30,7 +30,6 @@ console.log(pId);
 // Enum - Enums allow a developer to define a set of named constants.
 var Direction1;
 (function (Direction1) {
-    // In other words, Direction.top has the value 5, bottom has 6, left has 7, and right has 8.
     Direction1[Direction1["top"] = 5] = "top";
     Direction1[Direction1["bottom"] = 6] = "bottom";
     Direction1[Direction1["left"] = 7] = "left";
@@ -50,3 +49,10 @@ let info = {
     name: 'Bob'
 };
 // console.log(info.name)
+// Type Assertion - It looks like type casting
+let cid = 12;
+// cid='string';
+// let customerId = <number>cid;       
+let customerId = cid; // we can also write like this
+// customerId = 'abc'
+console.log(typeof (customerId));
