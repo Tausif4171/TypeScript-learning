@@ -71,7 +71,7 @@ const addition = (x, y) => { return x + y; };
 const subtraction = (x, y) => { return x - y; };
 console.log(addition(4, 2));
 console.log(subtraction(4, 2));
-// Classes and access modifier
+// implement interface in class
 class Person {
     constructor(id, name) {
         this.id = id;

@@ -124,9 +124,17 @@ const subtraction: CalculatorFunc = (x: number, y: number): number => { return x
 console.log(addition(4, 2))
 console.log(subtraction(4, 2))
 
-// Classes and access modifier
 
-class Person {
+// Classes and data modifier or access modifier
+
+interface PersonInterface {
+    id: number
+    name: string
+    register(): string
+}
+
+// implement interface in class
+class Person implements PersonInterface {
     public id: number
     name: string
 
@@ -134,7 +142,7 @@ class Person {
         this.id = id
         this.name = name
     }
-    register(){
+    register() {
         return `${this.name} is now registered`
     }
 }
