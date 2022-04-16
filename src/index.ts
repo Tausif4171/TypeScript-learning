@@ -74,6 +74,7 @@ let info: user = {
 
 // console.log(info.name)
 
+
 // Type Assertion - It looks like type casting
 
 let cid: any = 12;
@@ -82,3 +83,15 @@ let cid: any = 12;
 let customerId = cid as number;      // we can also write like this
 // customerId = 'abc'
 console.log(typeof (customerId))
+
+
+// Functions
+
+function add(x: number, y: number): number {        // with return type - number
+    return x + y
+}
+function print(message: number | string): void {    // with no return type - void
+    console.log(message)
+}
+// console.log(add(1, 2))
+// print("hey")

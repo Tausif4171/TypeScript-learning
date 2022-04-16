@@ -56,3 +56,12 @@ let cid = 12;
 let customerId = cid; // we can also write like this
 // customerId = 'abc'
 console.log(typeof (customerId));
+// Functions
+function add(x, y) {
+    return x + y;
+}
+function print(message) {
+    console.log(message);
+}
+// console.log(add(1, 2))
+// print("hey")
