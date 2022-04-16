@@ -95,3 +95,19 @@ function print(message: number | string): void {    // with no return type - voi
 }
 // console.log(add(1, 2))
 // print("hey")
+
+
+// Interfaces
+
+interface UserInterface {
+    readonly id:number,     // 'readonly' we can read only not edit the value of id variable
+    name: string
+    age?:number     //optional with question mark '?'
+}
+
+const user1: UserInterface = {
+    id: 1,
+    name:'Tausif'
+}
+
+// user1.id=5

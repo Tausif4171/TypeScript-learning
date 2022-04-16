@@ -63,5 +63,8 @@ function add(x, y) {
 function print(message) {
     console.log(message);
 }
-// console.log(add(1, 2))
-// print("hey")
+const user1 = {
+    id: 1,
+    name: 'Tausif'
+};
+// user1.id=5
