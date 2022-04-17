@@ -101,7 +101,7 @@ console.log(emp.register());
 function getArray(items) {
     return new Array().concat(items);
 }
-let numberArray = getArray([1, 2, 3]); // here 'number' is type
-let stringArray = getArray(['tausif', 'rehan', 'faizan']); // here 'string' is type
+let numberArray = getArray([1, 2, 3]); // here 'number' is type 
+let stringArray = getArray(['tausif', 'rehan', 'faizan']); // here 'string' is type 
 numberArray.push(1);
 stringArray.push('abc');
