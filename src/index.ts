@@ -168,3 +168,15 @@ class Employee extends Person {
 const emp = new Employee(29, 'Tausif Khan', 'Software Developer')
 console.log(emp)
 console.log(emp.register())
+
+// Generics
+
+function getArray<Type>(items:Type[]):Type[]{       // Here 'Type' is like a placeholder for type
+    return new Array().concat(items)
+}
+
+let numberArray = getArray<number>([1,2,3]);    // here 'number' is type
+let stringArray = getArray<string>(['tausif','rehan','faizan']);    // here 'string' is type
+
+numberArray.push(1)
+stringArray.push('abc')
